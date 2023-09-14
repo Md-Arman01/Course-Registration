@@ -19,9 +19,9 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto ">
+      <div className="container mx-auto py-10">
         {/* nav section */}
-        <header className="text-3xl text-center my-10 font-bold">
+        <header className="text-3xl text-center font-bold mb-10">
           Course Registration
         </header>
         {/* main section */}

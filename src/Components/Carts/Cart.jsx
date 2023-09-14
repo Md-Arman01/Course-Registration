@@ -1,26 +1,37 @@
 import PropTypes from 'prop-types';
-
+import { FiDollarSign } from "react-icons/Fi";
+import { HiOutlineBookOpen } from "react-icons/Hi";
 
 const Cart = ({datas, selectHandle}) => {
-    const {id, image, title, description, price, credit} = datas
+    const { image, title, description, price, credit} = datas
     console.log(datas)
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
+      <div className="bg-base-100 rounded-xl p-4">
+        <div  className="flex justify-center">
+        <figure>
           <img
             src={image}
             alt="Shoes"
-            className="rounded-xl"
+            className='w-[333px] h-[171px]'
           />
         </figure>
-        <div className="card-body items-center text-center">
-          <h2 className="card-title">{title}</h2>
-          <p>{description}</p>
-          <p>{price}</p>
-          <p>{credit}</p>
-          <div className="card-actions">
-            <button onClick={selectHandle} className="btn btn-primary">Buy Now</button>
+        </div>
+        <div className="text-left space-y-4 mt-4">
+          <h2 className="text-[#1C1B1B] text-lg font-semibold">{title}</h2>
+          <p className='text-[#777676] text-sm'>{description}</p>
+          <div className='flex justify-between gap-20'>
+            <div className='flex justify-between items-center flex-1'>
+            <FiDollarSign className='text-[#1c1b1b] text-xl'></FiDollarSign>
+            <p className='text-[#777676] text-base font-medium'>Price : {price}</p>
+            </div>
+            <div  className='flex justify-between items-center flex-1'>
+            <HiOutlineBookOpen  className='text-[#1c1b1b] text-2xl'></HiOutlineBookOpen>
+            <p className='text-[#777676] text-base font-medium'>Credit : {credit}hr</p>
+            </div>
+          </div>
+          <div className="">
+            <button onClick={selectHandle} className="btn bg-[#2F80ED] hover:bg-[#2f81ede7] text-white text-base font-semibold normal-case w-full">Select</button>
           </div>
         </div>
       </div>
