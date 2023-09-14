@@ -4,7 +4,7 @@ import { HiOutlineBookOpen } from "react-icons/Hi";
 
 const Cart = ({datas, selectHandle}) => {
     const { image, title, description, price, credit} = datas
-    console.log(datas)
+    
   return (
     <div>
       <div className="bg-base-100 rounded-xl p-4">
@@ -31,7 +31,7 @@ const Cart = ({datas, selectHandle}) => {
             </div>
           </div>
           <div className="">
-            <button onClick={selectHandle} className="btn bg-[#2F80ED] hover:bg-[#2f81ede7] text-white text-base font-semibold normal-case w-full">Select</button>
+            <button onClick={()=> selectHandle(title)} className="btn bg-[#2F80ED] hover:bg-[#2f81ede7] text-white text-base font-semibold normal-case w-full">Select</button>
           </div>
         </div>
       </div>

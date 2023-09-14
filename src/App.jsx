@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import Carts from "./Components/Carts/Carts";
 import BookMarks from "./Components/BookMarks/BookMarks";
+import swal from 'sweetalert';
 
 function App() {
   const [allData, setAllData] = useState([]);
+  const [names, setNames] = useState([])
 
   useEffect(() => {
     fetch("allData.json")
@@ -12,8 +14,14 @@ function App() {
   }, []);
 
 
-  const selectHandle = () =>{
-    console.log('cliked')
+  const selectHandle = (title) =>{
+    const newNames = [...names, title]
+    const isExist = names.find(name => name == title)
+    if(isExist){
+      return swal("Already Selected!", "Something went wrong!", "error");
+    }
+    setNames(newNames)
+
   }
 
 
@@ -30,7 +38,7 @@ function App() {
           <Carts selectHandle={selectHandle} allData={allData}></Carts>
           </div>
           <div className="w-1/4">
-          <BookMarks></BookMarks>
+          <BookMarks names={names}></BookMarks>
           </div>
         </main>
       </div>
