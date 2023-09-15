@@ -8,6 +8,7 @@ function App() {
   const [selectCard, setSelectCard] = useState([]);
   const [remaining , setRemaining] = useState(20)
   const [credit, setCredit] = useState(0)
+  const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(() => {
     fetch("allData.json")
@@ -18,6 +19,7 @@ function App() {
 
   const selectHandle = (datas) =>{
     const newSelectCard = [...selectCard, datas]
+    const newTotalPrice = totalPrice + datas.price
     const isExist = selectCard.find(card => card.title == datas.title)
 
     let countCredit = datas.credit
@@ -35,6 +37,7 @@ function App() {
       setRemaining(newRemaining) 
       setCredit(countCredit)
       setSelectCard(newSelectCard)
+      setTotalPrice(newTotalPrice)
 
     }
   }
@@ -53,7 +56,7 @@ function App() {
           <Carts selectHandle={selectHandle} allData={allData}></Carts>
           </div>
           <div className="w-1/4">
-          <BookMarks remaining={remaining} credit={credit} selectCard={selectCard}></BookMarks>
+          <BookMarks totalPrice={totalPrice} remaining={remaining} credit={credit} selectCard={selectCard}></BookMarks>
           </div>
         </main>
       </div>

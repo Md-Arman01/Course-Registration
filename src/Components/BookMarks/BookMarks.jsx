@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const BookMarks = ({remaining,credit,selectCard}) => {
+const BookMarks = ({totalPrice, remaining, credit, selectCard}) => {
     return (
         <div className="bg-[#FFF] px-4 py-5 rounded-xl space-y-4">
             <h1 className="text-[#2F80ED] text-lg font-bold border-b-gray-400">Credit Hour Remaining {remaining} hr</h1>
@@ -12,7 +12,7 @@ const BookMarks = ({remaining,credit,selectCard}) => {
             <hr />
             <h1 className="text-[#1C1B1BCC] font-medium border-t-gray-400">Total Credit Hour : {credit}</h1>
             <hr />
-            <h1 className="text-[#1C1B1BCC] font-medium border-t-gray-400">Total Price : 48000 USD</h1>
+            <h1 className="text-[#1C1B1BCC] font-medium border-t-gray-400">Total Price : {totalPrice} USD</h1>
         </div>
     )
 };
@@ -20,7 +20,8 @@ const BookMarks = ({remaining,credit,selectCard}) => {
 BookMarks.propTypes ={
     selectCard: PropTypes.array.isRequired,
     credit: PropTypes.number.isRequired,
-    remaining: PropTypes.number.isRequired
+    remaining: PropTypes.number.isRequired,
+    totalPrice: PropTypes.number.isRequired
 }
 
 export default BookMarks;
