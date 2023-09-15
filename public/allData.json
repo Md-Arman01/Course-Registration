@@ -3,7 +3,7 @@
       "id": "1",
       "image": "https://i.ibb.co/TmDKZjS/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "C is a versatile and influential programming language that has played a significant role in the development of modern computing. It was created in the early 1970s by Dennis Ritchie at Bell Labs and has since been used to build a wide range of software, including operating systems, embedded systems, and high-performance applications.",
       "price": 15000,
       "credit": 1
     },
@@ -11,7 +11,7 @@
       "id": "2",
       "image": "https://i.ibb.co/N2bp8zh/Rectangle-2-3.png",
       "title": "Introduction to Algorithms",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "An algorithm is a step-wise representation of a solution to a given problem. In an Algorithm the problem is broken down into smaller pieces or steps hence, it is easier for the programmer to convert it into an actual program.",
       "price": 25000,
       "credit": 2
     },
@@ -19,7 +19,7 @@
       "id": "3",
       "image": "https://i.ibb.co/59QHYb5/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "C++ is a powerful and versatile programming language that is widely used in the field of Data Structures and Algorithms (DSA). It is a popular choice among developers and computer scientists because of its efficiency, performance, and extensive standard library.",
       "price": 10000,
       "credit": 10
     },
@@ -27,7 +27,7 @@
       "id": "4",
       "image": "https://i.ibb.co/3SzQ1dQ/Rectangle-3.png",
       "title": "Basic Data Structures",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Data structures are fundamental building blocks in computer science and programming that allow us to efficiently store, organize, and manipulate data. They play a critical role in solving various computational problems and are a cornerstone of computer science education and software development.",
       "price": 35000,
       "credit": 5
     },
@@ -35,7 +35,7 @@
       "id": "5",
       "image": "https://i.ibb.co/GVGPZQw/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of objects, which are instances of classes. Python is a versatile and widely-used programming language that fully supports OOP principles.",
       "price": 19000,
       "credit": 5
     },
@@ -43,7 +43,7 @@
       "id": "6",
       "image": "https://i.ibb.co/4NJkxhd/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Software engineering is a discipline that focuses on designing, building, testing, and maintaining high-quality software systems. It encompasses a set of principles, methodologies, and best practices to ensure that software projects are delivered on time, within budget, and with the desired functionality.",
       "price": 23000,
       "credit": 2
     },
@@ -51,7 +51,7 @@
       "id": "7",
       "image": "https://i.ibb.co/CJkkMgy/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Cloud computing has revolutionized the way businesses and individuals access and use computing resources. Amazon Web Services (AWS) is a leading cloud services provider that offers a wide range of cloud computing solutions.",
       "price": 35000,
       "credit": 5
     },
@@ -59,7 +59,7 @@
       "id": "8",
       "image": "https://i.ibb.co/r5LL5jN/Rectangle-2-1.png",
       "title": "Database (MySQL)",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "MySQL is an open-source relational database management system (RDBMS) that is widely used in the world of web development and data-driven applications. It is known for its reliability, performance, and ease of use.",
       "price": 19000,
       "credit": 5
     },
@@ -67,7 +67,7 @@
       "id": "9",
       "image": "https://i.ibb.co/dtxVHyk/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "description": "Problem-solving is a fundamental skill in various aspects of life, including business, science, engineering, and, of course, computer programming and software development. It involves finding effective solutions to complex, often unfamiliar, and sometimes ill-defined problems.",
       "price": 23000,
       "credit": 2
     }

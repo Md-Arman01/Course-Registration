@@ -19,7 +19,7 @@ const Cart = ({datas, selectHandle}) => {
         </div>
         <div className="text-left space-y-4 mt-4">
           <h2 className="text-[#1C1B1B] text-lg font-semibold">{title}</h2>
-          <p className='text-[#777676] text-sm'>{description}</p>
+          <p className='text-[#777676] text-sm h-[150px]'>{description}</p>
           <div className='flex justify-between gap-20'>
             <div className='flex justify-between items-center flex-1'>
             <FiDollarSign className='text-[#1c1b1b] text-xl'></FiDollarSign>
