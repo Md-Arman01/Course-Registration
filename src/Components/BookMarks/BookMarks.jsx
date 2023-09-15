@@ -8,7 +8,7 @@ const BookMarks = ({names}) => {
             <hr />
             <h1 className="text-[#1C1B1B] text-lg font-bold">Course Name</h1>
             {
-                names.map((name,index) => <p key={index} className="text-[#777676] text-sm">{name}</p>)
+                names.map((name,index) => <p key={index} className="text-[#777676] text-sm">{index + 1}. {name}</p>)
             }
             <hr />
             <h1 className="text-[#1C1B1BCC] font-medium border-t-gray-400">Total Credit Hour : 13</h1>
