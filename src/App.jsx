@@ -6,6 +6,7 @@ import swal from 'sweetalert';
 function App() {
   const [allData, setAllData] = useState([]);
   const [selectCard, setSelectCard] = useState([]);
+  const [remaining , setRemaining] = useState(20)
   const [credit, setCredit] = useState(0)
 
   useEffect(() => {
@@ -27,9 +28,15 @@ function App() {
         countCredit += item.credit
       })
     }
-    setCredit(countCredit)
-    
-    setSelectCard(newSelectCard)
+    let newRemaining = 20 - countCredit
+    if(countCredit > 20){
+      swal("Credit Remaining Hour Limite 20hr", "You can't more registration!", "error");
+    }else{
+      setRemaining(newRemaining) 
+      setCredit(countCredit)
+      setSelectCard(newSelectCard)
+
+    }
   }
 
 
@@ -46,7 +53,7 @@ function App() {
           <Carts selectHandle={selectHandle} allData={allData}></Carts>
           </div>
           <div className="w-1/4">
-          <BookMarks credit={credit} selectCard={selectCard}></BookMarks>
+          <BookMarks remaining={remaining} credit={credit} selectCard={selectCard}></BookMarks>
           </div>
         </main>
       </div>
