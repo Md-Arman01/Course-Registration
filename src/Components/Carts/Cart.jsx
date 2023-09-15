@@ -31,7 +31,7 @@ const Cart = ({datas, selectHandle}) => {
             </div>
           </div>
           <div className="">
-            <button onClick={()=> selectHandle(title)} className="btn bg-[#2F80ED] hover:bg-[#2f81ede7] text-white text-base font-semibold normal-case w-full">Select</button>
+            <button onClick={()=> selectHandle(datas)} className="btn bg-[#2F80ED] hover:bg-[#2f81ede7] text-white text-base font-semibold normal-case w-full">Select</button>
           </div>
         </div>
       </div>

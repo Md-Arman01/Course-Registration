@@ -5,7 +5,8 @@ import swal from 'sweetalert';
 
 function App() {
   const [allData, setAllData] = useState([]);
-  const [names, setNames] = useState([])
+  const [selectCard, setSelectCard] = useState([]);
+  const [credit, setCredit] = useState(0)
 
   useEffect(() => {
     fetch("allData.json")
@@ -14,14 +15,21 @@ function App() {
   }, []);
 
 
-  const selectHandle = (title) =>{
-    const newNames = [...names, title]
-    const isExist = names.find(name => name == title)
+  const selectHandle = (datas) =>{
+    const newSelectCard = [...selectCard, datas]
+    const isExist = selectCard.find(card => card.title == datas.title)
+
+    let countCredit = datas.credit
     if(isExist){
       return swal("Already Selected!", "Something went wrong!", "error");
+    }else{
+      selectCard.forEach(item => {
+        countCredit += item.credit
+      })
     }
-    setNames(newNames)
-
+    setCredit(countCredit)
+    
+    setSelectCard(newSelectCard)
   }
 
 
@@ -38,7 +46,7 @@ function App() {
           <Carts selectHandle={selectHandle} allData={allData}></Carts>
           </div>
           <div className="w-1/4">
-          <BookMarks names={names}></BookMarks>
+          <BookMarks credit={credit} selectCard={selectCard}></BookMarks>
           </div>
         </main>
       </div>
