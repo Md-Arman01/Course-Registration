@@ -8,6 +8,6 @@ Answers:
 # Question-2: My assignment project discussed how I managed the state.
 
 Answers:
- - I'm created five global state of  apps.jsx. In the first I saved all the data, in the second I saved the selectcard, in the third I saved the remaining, in the fourth I saved the credit and in the fifth I saved the total value.
+ - useState is React Hook that allows you to add state to a functional component.I'm created five global state of  apps.jsx. In the first I saved all the data, in the second I saved the selectcard, in the third I saved the remaining, in the fourth I saved the credit and in the fifth I saved the total value.
 
 
